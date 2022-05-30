@@ -209,6 +209,7 @@ footer {
 
     header{
         background-color: #510202;
+        background-image: none;
     }
     .botonesnav li{
         text-decoration: none;
