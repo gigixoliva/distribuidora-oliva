@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* titulos subtitulos y textos */
+
+h1 {
+    font-family: 'Anybody';
+    font-weight: 800;
+    text-align: center;
+    font-size: 120px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 75px;
+    -webkit-text-stroke: white 1px;
+}
+
+h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 60px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 125px
+}
+
+h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    color: #cc3333;
+    letter-spacing: 1px;
+    line-height: 0px;
+}
+h4 {
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 16px;
+}
+
+/* header logo y nav */
+
+header {
+    overflow: hidden;
+    background-image: url(https://64.media.tumblr.com/444c9a9d322551e4dee0920d83c5ae90/41e8641e505518cd-d2/s2048x3072/0523c936fb5cbce70830e560d097acabc4801d85.jpg);
+}
+
+.loguito {
+    display: flex;
+    justify-content: center;
+}
+    nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.botonesnav li{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    background-color: #cc3333;
+    padding: 10px;
+    display: inline-block;
+    margin: 0px 60px 0 60px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #cc3333;
+}
+
+/* ofertas en index*/
+
+.imgpromocional {
+    overflow: hidden;
+}
+.imgpromomobile {
+    display: none;
+}
+
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.cajasindex{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+/* ofertascatalogo */
+
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.cajascat{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+/* mapa index*/
+
+.mapita  {
+    display: block;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+}
+
+/* botonesvermas-vermas-volverarriba index*/
+
+.botonvercatalog, .botonmasinfo, .botonvolverarriba {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    border: 3px solid white;
+    background-color: #ff9933;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+/*footer*/
+
+.footerbuttons {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+}
+
+footer {
+    display: block;
+    background-color: #cc3333;
+}
+
+@media only screen and (max-width: 480px) {
+    /* titulos subtitulos y textos */
+    h1 {
+    font-family: 'Anybody';
+    font-weight: 800;
+    text-align: center;
+    font-size: 80px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 50px;
+    }
+
+    h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 45px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 70px
+    }
+
+    h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 25px;
+    color: #cc3333;
+    letter-spacing: 1px;
+    }
+    h4 {
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    }
+
+    p {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 14px;
+    }
+
+    /*header y nav */
+    .loguito {
+        display: flex;
+        justify-content: center;
+    }
+
+    header{
+        background-color: #510202;
+    }
+    .botonesnav li{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Karla', sans-serif;
+        font-weight: bolder;
+    }
+
+    /*index*/
+    .imgpromocional {
+        display: none;
+    }
+    .imgpromomobile{
+        opacity: 1.0;
+        height: 581px;
+        width: 480px;
+    }
+    .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
+        font-size: 18px;
+        text-align: center;
+    }
+    .cajasindex{
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    /*catalogo*/
+    .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .cajascat{
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9,1fr);
+    }
+
+    .mapita  {
+        display: block;
+        width: 480px;
+        height: 180px;
+    }
+
+    /*footer*/
+
+    .footerbuttons {
+        list-style: none;
+        display: flex;
+        justify-content:center;
+        text-decoration: none;
+    }
+    
+    footer {
+        display: block;
+        background-color: #510202;
+    }
+}
