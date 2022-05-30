@@ -80,13 +80,16 @@ nav {
     background-color: #cc3333;
 }
 
+
 /* ofertas en index*/
 
 .imgpromocional {
     overflow: hidden;
 }
 .imgpromomobile {
-    display: none;
+    height: 0px;
+    width: 0px;
+    opacity: 0.0;
 }
 
 .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
@@ -136,7 +139,6 @@ nav {
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     font-weight: bolder;
-    border: 3px solid white;
     background-color: #ff9933;
     padding: 10px;
     height: fit-content;
@@ -144,6 +146,29 @@ nav {
     text-align: center;
     display: flex;
     margin: auto;
+}
+
+.botonmasinfo:hover, .botonvercatalog:hover {
+    color: #white;
+    background-color: #cc3333;
+}
+
+.botonvolverarriba:hover {
+    color: #cc3333;
+    background-color: white;
+}
+
+.botonmasinfo:hover,.botonvercatalog:hover,.botonvolverarriba:hover {
+    transform: scale(1.1);
+}
+
+.botonmasinfo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonvolverarriba {
+    margin-bottom: 20px;
 }
 
 /*footer*/
@@ -212,10 +237,7 @@ footer {
         background-image: none;
     }
     .botonesnav li{
-        text-decoration: none;
-        font-size: 18px;
-        font-family: 'Karla', sans-serif;
-        font-weight: bolder;
+        display: none;
     }
 
     /*index*/
@@ -223,9 +245,9 @@ footer {
         display: none;
     }
     .imgpromomobile{
-        opacity: 1.0;
         height: 581px;
         width: 480px;
+        opacity: 1.0;
     }
     .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
         font-size: 18px;
