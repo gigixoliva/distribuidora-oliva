@@ -69,15 +69,21 @@ nav a{
     display: flex;
     justify-content: space-around;
     background-color: #cc3333;
-    padding: 10px;
 }
 .btnnav1,.btnnav2,.btnnav3,.btnnav4,.btnnav5,.btnnav6{
     font-family: 'Karla', sans-serif;
     font-weight: bolder;
+    padding: 15px;
 }
 .btnnav1:hover,.btnnav2:hover,.btnnav3:hover,.btnnav4:hover,.btnnav5:hover,.btnnav6:hover{
-    background-color: #510202;
+    background-color: white;
 }
+
+nav a:hover {
+    color: #cc3333;
+    font-size: 20px;
+}
+
 /* ofertas en index*/
 
 .imgpromocional {
@@ -146,7 +152,7 @@ nav a{
 }
 
 .botonmasinfo:hover, .botonvercatalog:hover, .botonvolverarriba:hover {
-    color: #white;
+    color: white;
     background-color: #cc3333;
 }
 
