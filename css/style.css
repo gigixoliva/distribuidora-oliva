@@ -57,30 +57,27 @@ header {
     display: flex;
     justify-content: center;
 }
-    nav ul a {
+
+nav a{
     list-style: none;
     text-decoration: none;
     color: white;
-}
-
-.botonesnav li{
-    text-decoration: none;
     font-size: 20px;
-    font-family: 'Karla', sans-serif;
-    font-weight: bolder;
+}
+.botonesnav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     background-color: #cc3333;
     padding: 10px;
-    display: inline-block;
-    margin: 0px 60px 0 60px;
 }
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #cc3333;
+.btnnav1,.btnnav2,.btnnav3,.btnnav4,.btnnav5,.btnnav6{
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
 }
-
-
+.btnnav1:hover,.btnnav2:hover,.btnnav3:hover,.btnnav4:hover,.btnnav5:hover,.btnnav6:hover{
+    background-color: #510202;
+}
 /* ofertas en index*/
 
 .imgpromocional {
@@ -148,18 +145,14 @@ nav {
     margin: auto;
 }
 
-.botonmasinfo:hover, .botonvercatalog:hover {
+.botonmasinfo:hover, .botonvercatalog:hover, .botonvolverarriba:hover {
     color: #white;
     background-color: #cc3333;
 }
 
-.botonvolverarriba:hover {
-    color: #cc3333;
-    background-color: white;
-}
-
 .botonmasinfo:hover,.botonvercatalog:hover,.botonvolverarriba:hover {
     transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 .botonmasinfo{
@@ -176,13 +169,16 @@ nav {
 .footerbuttons {
     list-style: none;
     display: flex;
-    justify-content:center;
-    text-decoration: none;
+    justify-content: center;
 }
 
+.btnfooter1:hover,.btnfooter2:hover,.btnfooter3:hover,.btnfooter4:hover,.btnfooter5:hover,.btnfooter6:hover{
+    margin-top: -10px;
+    transition: all 0.3s;
+}
 footer {
     display: block;
-    background-color: #cc3333;
+    background-color: #ff9966;
 }
 
 @media only screen and (max-width: 480px) {
