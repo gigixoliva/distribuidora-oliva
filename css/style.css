@@ -90,11 +90,10 @@ nav a:hover {
     font-size: 20px;
 }
 
+/*carousel index*/
+
 /* ofertas en index*/
 
-.imgpromocional {
-    overflow: hidden;
-}
 .imgpromomobile {
     height: 0px;
     width: 0px;
@@ -176,7 +175,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/*contacto*/
+/*contacto pag*/
 
 /*formulario*/
 
