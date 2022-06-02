@@ -41,6 +41,12 @@ h4 {
     font-size: 16px;
 }
 
+h5 {
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 p {
     font-family: 'Radio Canada', sans-serif;
     font-size: 16px;
@@ -170,6 +176,48 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/*contacto*/
+
+/*formulario*/
+
+
+.mailmodif,.nombremodif,.telmodif,.comentariomodif{
+    width: 100%;
+}
+
+.conteinerformulario{
+    background-color: #ffcc99;
+    width: 100%;
+
+}
+
+.conteinerformpadre {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+
+/*nuestrosdatos*/
+
+.phoneicon, .emailicon, .locationicon{
+    color: #ffcc99;
+    font-size: 20px;
+}
+
+.mapacontacto{
+    height: min-content;
+    width: min-content;
+}
+
+.bothinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
 /*footer*/
 
 .footerbuttons {
@@ -186,6 +234,7 @@ footer {
     display: block;
     background-color: #ff9966;
 }
+
 
 @media only screen and (max-width: 480px) {
     /* titulos subtitulos y textos */
