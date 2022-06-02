@@ -3,7 +3,7 @@
     padding: 0;
 
 }
-/* titulos subtitulos y textos */
+/************ titulos subtitulos y textos *************/
 
 h1 {
     font-family: 'Anybody';
@@ -44,7 +44,7 @@ h4 {
 h5 {
     font-family:'Radio Canada', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p {
@@ -52,7 +52,7 @@ p {
     font-size: 16px;
 }
 
-/* header logo y nav */
+/**************** header logo y nav *******************/
 
 header {
     overflow: hidden;
@@ -90,9 +90,8 @@ nav a:hover {
     font-size: 20px;
 }
 
-/*carousel index*/
 
-/* ofertas en index*/
+/************************* ofertas en index***************/
 
 .imgpromomobile {
     height: 0px;
@@ -114,7 +113,7 @@ nav a:hover {
     grid-template-rows: repeat(2,1fr);
 }
 
-/* ofertascatalogo */
+/********************* ofertascatalogo **********/
 
 .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
     font-size: 18px;
@@ -130,7 +129,7 @@ nav a:hover {
     grid-template-rows: repeat(5,1fr);
 }
 
-/* mapa index*/
+/************************* mapa index******************/
 
 .mapita  {
     display: block;
@@ -139,7 +138,7 @@ nav a:hover {
     margin: auto;
 }
 
-/* botonesvermas-vermas-volverarriba index*/
+/******** botonesvermas-vermas-volverarriba index***********/
 
 .botonvercatalog, .botonmasinfo, .botonvolverarriba {
     text-decoration: none;
@@ -175,49 +174,76 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/*contacto pag*/
+/****************contacto pag****************/
 
-/*formulario*/
+/**************formulario****************/
 
 
 .mailmodif,.nombremodif,.telmodif,.comentariomodif{
-    width: 100%;
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
 }
-
+.comentariomodif{
+    height: 30%;
+}
 .conteinerformulario{
     background-color: #ffcc99;
-    width: 100%;
-
+    width: 80%;
 }
-
 .conteinerformpadre {
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 30%;
+}
+.btnenviarmodif{
+    color: #510202;
+    background-color: white;
+    border: #ff9933;
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 70%;
 }
 
+.btnenviarmodif:hover{
+    color: white;
+    background-color: #cc3333;
+}
 
-/*nuestrosdatos*/
+.conteinerformpadre h5 {
+    margin-left: 10%;
+}
+
+/**************nuestrosdatos*************/
 
 .phoneicon, .emailicon, .locationicon{
     color: #ffcc99;
     font-size: 20px;
 }
 
-.mapacontacto{
-    height: min-content;
-    width: min-content;
+.conteinerndpadre{
+    width: 20%;
+    border: #ffcc99 solid 1px;
 }
 
+.mapacontacto{
+    height: 35%;
+    width: 80%;
+}
+
+.conteinerndpadre {
+    text-align: center;
+}
 .bothinfo{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 5%;
+    margin: 5% 5% 5% 10%;
 }
 
-/*footer*/
+
+/*********************footer******************/
 
 .footerbuttons {
     list-style: none;
