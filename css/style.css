@@ -93,6 +93,10 @@ nav a:hover {
     margin-bottom: -30;
 }
 
+/**************carousel***********************/
+.bannersmobile{
+    display: none;
+}
 
 /****************nav mobile*******************/
 
@@ -405,11 +409,11 @@ footer {
     .bannersindex {
         display: none;
     }
-    .imgpromomobile{
-        height: 581px;
-        width: 480px;
-        opacity: 1.0;
+
+    .bannersmobile{
+        display: block;
     }
+    
     .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
         font-size: 18px;
         text-align: center;
