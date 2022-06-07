@@ -6,6 +6,8 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
+            <!-- bootstrap stylesheet-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
             <!-- css stylesheet -->
             <link rel="stylesheet" href="../css/style.css">
             <!-- favicon -->
@@ -16,6 +18,8 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;800&family=Barlow+Condensed:wght@500&family=Fredoka:wght@300;400;500;600;700&family=Grandstander:wght@600;700&family=Karla:wght@200;500&family=Libre+Franklin:wght@300&family=Radio+Canada:wght@300;400;700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+            <!--iconosfontawesome-->
+            <script src="https://kit.fontawesome.com/fed0bc1507.js" crossorigin="anonymous"></script>
     
         </head>
     <body>
@@ -23,7 +27,7 @@
             <div class="loguito"><img src="../img/logotransparente.png" alt="logotransparente"></div>
             <h1>CHECHI'S</h1>
          </header>
-        <nav>
+         <nav class="navbarmargintest">
             <ul class="botonesnav">
                 <li><div class="btnnav1"><a href="../index.html">HOME </a></div></li>
                 <li><div class="btnnav2"><a href="./catalogo.html">CATÁLOGO </a></div></li>
@@ -33,6 +37,25 @@
                 <li><div class="btnnav6"><a href="./acerca-de.html">ACERCA DE </a></div></li>
             </ul>
         </nav>
+
+        <!-------------nav mobile------------------->
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="../index.html">HOME</a></li>
+              <li><a class="menu__item" href="./catalogo.html">CATÁLOGO</a></li>
+              <li><a class="menu__item" href="./promos.html">PROMOS</a></li>
+              <li><a class="menu__item" href="./envios.html">ENVÍOS</a></li>
+              <li><a class="menu__item" href="./contacto.html">CONTACTO</a></li>
+              <li><a class="menu__item" href="./acerca-de.html">SOBRE NOSOTROS</a></li>
+            </ul>
+          </div>
+
         
         <main>
             <h2>Catálogo</h2>
@@ -92,7 +115,9 @@
             </div>
         </main>
         
-        <footer>
+        <!--------------------------footer------------------------------>
+        
+        <footer class="footermarginfix">
             <a class="botonvolverarriba" href="#Inicio">VOLVER ARRIBA</a>
             <ul class="footerbuttons">
                 <li><div class="btnfooter1"><a href="./contacto.html"><img src="../img/mailicon.png" alt="icono mail"> </a> </div></li>
@@ -103,6 +128,9 @@
                 <li><div class="btnfooter6"><img src="../img/instagramicon.png" alt="instagramicon"></div></li>
             </ul>
         </footer>
+
+        <!-------------------------Js script------------------------------>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         
     </body>
 

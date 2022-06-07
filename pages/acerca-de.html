@@ -6,17 +6,20 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
+            <!-- bootstrap stylesheet-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
             <!-- css stylesheet -->
             <link rel="stylesheet" href="../css/style.css">
             <!-- favicon -->
             <link rel="shortcut icon" href="../img/favicon.png">
             <!-- anchor para scrollup -->
             <a name="Inicio"></a>
-    
             <!-- fuentes utilizadas-->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;800&family=Barlow+Condensed:wght@500&family=Fredoka:wght@300;400;500;600;700&family=Grandstander:wght@600;700&family=Karla:wght@200;500&family=Libre+Franklin:wght@300&family=Radio+Canada:wght@300;400;700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+            <!--iconosfontawesome-->
+            <script src="https://kit.fontawesome.com/fed0bc1507.js" crossorigin="anonymous"></script>
     
         </head>
     <body>
@@ -35,17 +38,40 @@
             </ul>
         </nav>
 
+        <!-------------nav mobile------------------->
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="../index.html">HOME</a></li>
+              <li><a class="menu__item" href="./catalogo.html">CATÁLOGO</a></li>
+              <li><a class="menu__item" href="./promos.html">PROMOS</a></li>
+              <li><a class="menu__item" href="./envios.html">ENVÍOS</a></li>
+              <li><a class="menu__item" href="./contacto.html">CONTACTO</a></li>
+              <li><a class="menu__item" href="./acerca-de.html">SOBRE NOSOTROS</a></li>
+            </ul>
+          </div>
+
+
        <main> 
            <section>
                <h2>Sobre Nosotros</h2>
-               <p><h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias ab quos temporibus veritatis debitis quis quibusdam numquam! Qui, nihil! Repellat tempora tenetur quaerat. In corporis vero qui obcaecati dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ea nobis odit dolore consectetur, provident ad assumenda, ipsum fuga quisquam sequi corporis perspiciatis vero id nam ipsam esse blanditiis? Possimus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquid laborum animi debitis voluptatibus pariatur repudiandae quidem eligendi ipsa similique nobis illo placeat, ratione doloribus. Quibusdam in fuga voluptates vero.</h4></p>
+               <p><h4>Somos un emprendimiento distribuidor dedicado a satisfacer las necesidades de nuestros clientes. 
+                   Somos una empresa pequeña que con mucho esfuerzo por parte de nuestros colaboradores ha llegado a tener muchísimos clientes fieles a nosotrs, y continuaremos brindando esta calidad de servicio para seguir creciendo como empresa y poersonas.
+               </h4></p>
             </section>
         </main>
         <aside>
             <img src="../img/bigophoto.jpg" alt="bigophoto">
         </aside>
-        <footer>
+
+        <!--------------------------footer------------------------------>
+        
+        <footer class="footermarginfix">
             <a class="botonvolverarriba" href="#Inicio">VOLVER ARRIBA</a>
             <ul class="footerbuttons">
                 <li><div class="btnfooter1"><a href="./contacto.html"><img src="../img/mailicon.png" alt="icono mail"> </a> </div></li>
@@ -57,6 +83,8 @@
             </ul>
         </footer>
 
+        <!-------------------------Js script------------------------------>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 
 </html>
