@@ -1,0 +1,38 @@
+%display{
+    display:flex;
+    justify-content: center;
+}
+
+%displayfspacea{
+    display: flex;
+    justify-content: space-around;
+}
+
+%displaymarginsauto{
+    margin: 0;
+    padding: 0;
+}
+
+%displayf{
+    display: flex;
+    flex-direction: row;
+}
+
+%displayf2{
+    display: flex;
+    flex-direction: column;
+}
+
+%displayb{
+    display: block;
+}
+
+%displayg{
+    display: grid;
+}
+%estilolista{
+    list-style: none;
+}
+
+
+

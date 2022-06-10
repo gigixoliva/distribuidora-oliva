@@ -1,0 +1,573 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: url(https://64.media.tumblr.com/444c9a9d322551e4dee0920d83c5ae90/41e8641e505518cd-d2/s2048x3072/0523c936fb5cbce70830e560d097acabc4801d85.jpg);
+    overflow: hidden;
+    .loguito{
+        @extend %display;
+    }
+}
+h1 {
+    color: nth($colors, 2 );
+    font-size: nth($fontsize, 10 );
+    font-weight: nth($fontweight, 1 );
+    -webkit-text-stroke: map-get($h1titulo , bordeletra );
+    letter-spacing: map-get($h1titulo , espacio-letra );
+    line-height: map-get($h1titulo, renglon );
+    text-align: $textocentrado;
+    font-family: nth($fontfamily , 1 );
+}
+h2, h3{
+    font-family: nth($fontfamily, 2 );
+    text-align: $textocentrado;
+    font-weight: nth($fontweight, 2 );
+    color: nth($colors , 3 );
+    font-size: nth($fontsize, 9 );
+}
+h2{
+    font-size: nth($fontsize , 8 );
+}
+
+h4{
+    h5{
+        p{
+           font-family: nth($fontfamily , 3 );
+        }
+    }
+}
+h4{
+    font-size: nth($fontsize, 3);
+    h5{
+    font-weight: nth($fontweight , 3 );
+    font-size: nth($fontsize, 4 );
+        p{
+        font-size: nth($fontsize, 3 )
+        }
+    }
+
+}
+
+/**************** header logo y nav *******************/
+
+nav{
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: nth($colors , 1 );
+        font-size: nth($fontsize , 5 );
+    }
+}
+.botonesnav{
+    list-style: none;
+    @extend %displayfspacea;
+    background-color: nth($colors , 3 );
+}
+.btnnav1{
+    .btnnav2{
+        .btnnav3{
+            .btnnav4{
+                .btnnav5{
+                    .btnnav6{
+                        font-family: nth($fontfamily , 2 );
+                        font-weight: bold;
+                        padding: 15px;
+                        background-color: nth($colors , 1 );
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+.btnnav1{
+    .btnnav2{
+        .btnnav3{
+            .btnnav4{
+                .btnnav5{
+                    .btnnav6{
+                    &:hover{
+                        background-color: nth($colors , 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+nav {
+    a {
+        &:hover {
+            color: nth($colors , 3);
+        }
+    }
+}
+
+/***********css*************/
+.navbarmargintest {
+    margin-bottom: -30;
+}
+
+/**************carousel***********************/
+.bannersmobile{
+    display: none;
+}
+
+/****************nav mobile*******************/
+
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #510202;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    color: #510202 ;
+    background-color: #CFD8DC;
+  }
+
+/************************* ofertas en index***************/
+
+.imgpromomobile {
+    height: 0px;
+    width: 0px;
+    opacity: 0.0;
+}
+
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.cajasindex{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+/********************* ofertascatalogo **********/
+
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.cajascat{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+/************************* mapa index******************/
+
+.mapita  {
+    display: block;
+    width: 600px;
+    height: 350px;
+    margin: auto;
+}
+
+/******** botonesvermas-vermas-volverarriba index***********/
+
+.botonvercatalog, .botonmasinfo, .botonvolverarriba {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
+    background-color: #ff9933;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.botonmasinfo:hover, .botonvercatalog:hover, .botonvolverarriba:hover {
+    color: white;
+    background-color: #cc3333;
+}
+
+.botonmasinfo:hover,.botonvercatalog:hover,.botonvolverarriba:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.botonmasinfo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonvolverarriba {
+    margin-bottom: 20px;
+}
+
+/****************envios****************/
+
+.enviosbox{
+    h4{
+    text-align: center;
+    line-height: 50px;
+    }
+    h2,h3{
+        line-height: 20px;
+    }
+}
+.mapitasec{
+    @extend %display;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/****************contacto pag****************/
+
+/**************formulario****************/
+
+
+.mailmodif,.nombremodif,.telmodif,.comentariomodif{
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+}
+.comentariomodif{
+    height: 30%;
+}
+.conteinerformulario{
+    background-color: #ffcc99;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.conteinerformpadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+}
+.btnenviarmodif{
+    color: #510202;
+    background-color: white;
+    border: #ff9933;
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin: auto;
+}
+
+.btnenviarmodif:hover{
+    color: white;
+    background-color: #cc3333;
+}
+
+.conteinerformpadre h5 {
+    margin-left: 10%;
+}
+
+/**************nuestrosdatos*************/
+
+.phoneicon, .emailicon, .locationicon{
+    color: #ffcc99;
+    font-size: 20px;
+}
+
+.conteinerndpadre{
+    width: auto;
+    border: #ffcc99 solid 1px;
+}
+
+.mapacontacto{
+    height: 35%;
+    width: 80%;
+}
+
+.conteinerndpadre {
+    text-align: center;
+}
+.bothinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 10% 5% 10%;
+}
+
+/*********************footer******************/
+
+.footermarginfix{
+    margin-bottom: -30px;
+}
+
+.footerbuttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.btnfooter1:hover,.btnfooter2:hover,.btnfooter3:hover,.btnfooter4:hover,.btnfooter5:hover,.btnfooter6:hover{
+    margin-top: -10px;
+    transition: all 0.3s;
+}
+footer {
+    display: block;
+    background-color: #ff9966;
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* titulos subtitulos y textos */
+    h1 {
+    font-family: 'Anybody';
+    font-weight: 800;
+    text-align: center;
+    font-size: 80px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 50px;
+    }
+
+    h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 45px;
+    color: #cc3333;
+    letter-spacing: 2px;
+    line-height: 70px
+    }
+
+    h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    color: #cc3333;
+    letter-spacing: 1px;
+    }
+    h4 {
+    font-family:'Radio Canada', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    }
+    h5 {
+        font-family:'Radio Canada', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    p {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 14px;
+    }
+
+    /***************header y nav *************/
+    .loguito {
+        display: flex;
+        justify-content: center;
+    }
+
+    header{
+        background-color: #510202;
+        background-image: none;
+    }
+    .botonesnav li{
+        display: none;
+    }
+
+    /****************index****************/
+    .bannersindex {
+        display: none;
+    }
+
+    .bannersmobile{
+        display: block;
+    }
+    
+    .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
+        font-size: 18px;
+        text-align: center;
+    }
+    .cajasindex{
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    /*****************catalogo****************/
+    .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .cajascat{
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9,1fr);
+    }
+
+    .mapita  {
+        display: block;
+        width: 480px;
+        height: 180px;
+    }
+
+    /**************contacto*****************/
+
+    /**************formulario**************/
+
+    .mailmodif,.nombremodif,.telmodif,.comentariomodif{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .comentariomodif{
+        height: 20%;
+    }
+    .conteinerformulario{
+        background-color: #ffcc99;
+        display: flex;
+        flex-direction: column;
+    }
+    .conteinerformpadre {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .btnenviarmodif{
+        color: #510202;
+        background-color: white;
+        border: #ff9933;
+        font-family:'Radio Canada', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    
+    .btnenviarmodif:hover{
+        color: white;
+        background-color: #cc3333;
+    }
+    
+    .conteinerformpadre h5 {
+        margin-left: 10%;
+        line-height: 25px;
+    }
+    
+    /**************nuestrosdatos*************/
+    
+    .phoneicon, .emailicon, .locationicon{
+        color: #ffcc99;
+        font-size: 20px;
+    }
+    
+    .conteinerndpadre{
+        width: 100%;
+        border: #ffcc99 solid 1px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mapacontacto{
+        height: 35%;
+        width: 80%;
+    }
+    
+    .conteinerndpadre {
+        text-align: center;
+    }
+
+    .bothinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    /**************footer******************/
+
+    .footerbuttons {
+        list-style: none;
+        display: flex;
+        justify-content:center;
+        text-decoration: none;
+    }
+    
+    footer {
+        display: block;
+        background-color: #510202;
+    }
+}
