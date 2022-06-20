@@ -1,111 +1,122 @@
-body {
-  margin: 0px;
-  padding: 0px;
-}
+*{
+  margin: 0;
+  padding: 0;
 
-header {
-  background-image: url(https://64.media.tumblr.com/444c9a9d322551e4dee0920d83c5ae90/41e8641e505518cd-d2/s2048x3072/0523c936fb5cbce70830e560d097acabc4801d85.jpg);
-  overflow: hidden;
 }
+/************ titulos subtitulos y textos *************/
+
 h1 {
-  color: #cc3433;
-  font-size: 120px;
+  font-family: 'Anybody';
   font-weight: 800;
-  -webkit-text-stroke: white 1px;
+  text-align: center;
+  font-size: 120px;
+  color: #cc3333;
   letter-spacing: 2px;
   line-height: 75px;
-  text-align: center;
-  font-family: "Anybody";
-}
-
-h2, h3 {
-  font-family: "Fredoka" sans-serif;
-  text-align: center;
-  font-weight: 500;
-  color: #cc3333;
-  font-size: 1.875rem;
+  -webkit-text-stroke: white 1px;
 }
 
 h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  text-align: center;
   font-size: 60px;
+  color: #cc3333;
+  letter-spacing: 2px;
+  line-height: 125px
 }
 
-h4 h5 p {
-  font-family: "Radio Canada" sans-serif;
+h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.875rem;
+  color: #cc3333;
+  letter-spacing: 1px;
 }
-
 h4 {
+  font-family:'Radio Canada', sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
-h4 h5 {
+
+h5 {
+  font-family:'Radio Canada', sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
-h4 h5 p {
+
+p {
+  font-family: 'Radio Canada', sans-serif;
   font-size: 16px;
 }
 
 /**************** header logo y nav *******************/
-nav a {
+
+header {
+  overflow: hidden;
+  background-image: url(https://64.media.tumblr.com/444c9a9d322551e4dee0920d83c5ae90/41e8641e505518cd-d2/s2048x3072/0523c936fb5cbce70830e560d097acabc4801d85.jpg);
+}
+
+.loguito {
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
   list-style: none;
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
-
-.botonesnav {
+.botonesnav{
   list-style: none;
+  display: flex;
+  justify-content: space-around;
   background-color: #cc3333;
 }
-
-.btnnav1 .btnnav2 .btnnav3 .btnnav4 .btnnav5 .btnnav6 {
-  font-family: "Fredoka" sans-serif;
-  font-weight: bold;
+.btnnav1,.btnnav2,.btnnav3,.btnnav4,.btnnav5,.btnnav6{
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
   padding: 15px;
-  background-color: white;
 }
-
-.btnnav1 .btnnav2 .btnnav3 .btnnav4 .btnnav5 .btnnav6:hover {
+.btnnav1:hover,.btnnav2:hover,.btnnav3:hover,.btnnav4:hover,.btnnav5:hover,.btnnav6:hover{
   background-color: white;
 }
 
 nav a:hover {
   color: #cc3333;
+  font-size: 20px;
 }
 
-/***********css*************/
 .navbarmargintest {
   margin-bottom: -30;
 }
 
 /**************carousel***********************/
-.bannersmobile {
+.bannersmobile{
   display: none;
 }
 
 /****************nav mobile*******************/
+
 #menu__toggle {
   opacity: 0;
 }
-
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
-
 #menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
-
 #menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-
 #menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
-
 .menu__btn {
   position: fixed;
   top: 20px;
@@ -115,7 +126,6 @@ nav a:hover {
   cursor: pointer;
   z-index: 1;
 }
-
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -124,19 +134,16 @@ nav a:hover {
   width: 100%;
   height: 2px;
   background-color: white;
-  transition-duration: 0.25s;
+  transition-duration: .25s;
 }
-
 .menu__btn > span::before {
-  content: "";
+  content: '';
   top: -8px;
 }
-
 .menu__btn > span::after {
-  content: "";
+  content: '';
   top: 8px;
 }
-
 .menu__box {
   display: block;
   position: fixed;
@@ -148,64 +155,51 @@ nav a:hover {
   padding: 80px 0;
   list-style: none;
   background-color: #510202;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  transition-duration: 0.25s;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
 }
-
 .menu__item {
   display: block;
   padding: 12px 24px;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  transition-duration: 0.25s;
+  transition-duration: .25s;
 }
-
 .menu__item:hover {
-  color: #510202;
+  color: #510202 ;
   background-color: #CFD8DC;
 }
 
 /************************* ofertas en index***************/
+
 .imgpromomobile {
   height: 0px;
   width: 0px;
-  opacity: 0;
+  opacity: 0.0;
 }
 
-.caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10 {
-  font-size: 18px;
+.cajain1,.cajain2,.cajain3,.cajain4,.cajain5,.cajain6,.cajain7,.cajain8,.cajain9,.cajain10{
+  width: 250px;
+  height: 250px;
+  margin: 3%;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  border: solid #ff9966 1px;
+}
+.cajasindex{
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  justify-content: space-around;
 }
 
-.cajasindex {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-/********************* ofertascatalogo **********/
-.caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10, .caja11, .caja12, .caja13, .caja14, .caja15, .caja16, .caja17 {
-  font-size: 18px;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
-
-.cajascat {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
 
 /************************* mapa index******************/
-.mapita {
+
+.mapita  {
   display: block;
   width: 600px;
   height: 350px;
@@ -213,11 +207,12 @@ nav a:hover {
 }
 
 /******** botonesvermas-vermas-volverarriba index***********/
+
 .botonvercatalog, .botonmasinfo, .botonvolverarriba {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: bolder;
   background-color: #ff9933;
   padding: 10px;
@@ -233,12 +228,12 @@ nav a:hover {
   background-color: #cc3333;
 }
 
-.botonmasinfo:hover, .botonvercatalog:hover, .botonvolverarriba:hover {
+.botonmasinfo:hover,.botonvercatalog:hover,.botonvolverarriba:hover {
   transform: scale(1.1);
   transition: all 0.3s;
 }
 
-.botonmasinfo {
+.botonmasinfo{
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -246,58 +241,60 @@ nav a:hover {
 .botonvolverarriba {
   margin-bottom: 20px;
 }
+/*****************catalogo ******************/
 
-/****************envios****************/
-.enviosbox h4 {
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17,.caja18,.caja19,.caja20,.caja21,.caja22,.caja23,.caja24,.caja25,.caja26,.caja27,.caja28,.caja29,.caja30{
+  width: 250px;
+  height: 250px;
+  margin: 3%;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  border: solid #ff9966 1px;
+}
+.cajascat{
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  line-height: 50px;
-}
-.enviosbox h2, .enviosbox h3 {
-  line-height: 20px;
 }
 
-.mapitasec {
-  margin: auto;
-  margin-bottom: 20px;
-}
+
 
 /****************contacto pag****************/
-/**************formulario****************/
-.mailmodif, .nombremodif, .telmodif, .comentariomodif {
+
+/**************formulario********************/
+
+
+.mailmodif,.nombremodif,.telmodif,.comentariomodif{
   width: 80%;
   height: 5%;
   margin-left: 10%;
 }
-
-.comentariomodif {
+.comentariomodif{
   height: 30%;
 }
-
-.conteinerformulario {
+.conteinerformulario{
   background-color: #ffcc99;
   width: 80%;
   display: flex;
   flex-direction: column;
 }
-
 .conteinerformpadre {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 30%;
 }
-
-.btnenviarmodif {
+.btnenviarmodif{
   color: #510202;
   background-color: white;
   border: #ff9933;
-  font-family: "Radio Canada", sans-serif;
+  font-family:'Radio Canada', sans-serif;
   font-weight: 300;
   font-size: 15px;
   margin: auto;
 }
 
-.btnenviarmodif:hover {
+.btnenviarmodif:hover{
   color: white;
   background-color: #cc3333;
 }
@@ -307,17 +304,18 @@ nav a:hover {
 }
 
 /**************nuestrosdatos*************/
-.phoneicon, .emailicon, .locationicon {
+
+.phoneicon, .emailicon, .locationicon{
   color: #ffcc99;
   font-size: 20px;
 }
 
-.conteinerndpadre {
+.conteinerndpadre{
   width: auto;
   border: #ffcc99 solid 1px;
 }
 
-.mapacontacto {
+.mapacontacto{
   height: 35%;
   width: 80%;
 }
@@ -325,202 +323,249 @@ nav a:hover {
 .conteinerndpadre {
   text-align: center;
 }
-
-.bothinfo {
+.bothinfo{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 5% 10% 5% 10%;
 }
+/******************acerca de******************/
 
-/*********************footer******************/
-.footermarginfix {
-  margin-bottom: -30px;
+.acercadedesc{
+  inline-size: 50%;
+  margin-top: 5%;
+  line-height: 120%;
+  overflow:wrap;
+  margin-left: 10%;
+}
+.imgbig{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 10%;
+  margin-top: -12%;
+}
+.cardleft{
+  border: solid #ff9933 1px;
+  text-align: center;
+  line-height: 200%;
+}
+.cardone,.cardtwo,.cardthree{
+  border: solid #ff9933 1px;
+}
+.abtpics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.cardone:hover,.cardtwo:hover,.cardthree:hover{
+  opacity: 0.3;
+  transition: .5s ease;
 }
 
+/*********************footer******************/
+.footermarginfix{
+  margin-bottom: -30px;
+}
 .footerbuttons {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-.btnfooter1:hover, .btnfooter2:hover, .btnfooter3:hover, .btnfooter4:hover, .btnfooter5:hover, .btnfooter6:hover {
+.btnfooter1:hover,.btnfooter2:hover,.btnfooter3:hover,.btnfooter4:hover,.btnfooter5:hover,.btnfooter6:hover{
   margin-top: -10px;
   transition: all 0.3s;
 }
-
 footer {
   display: block;
   background-color: #ff9966;
 }
 
+
 @media only screen and (max-width: 480px) {
   /* titulos subtitulos y textos */
   h1 {
-    font-family: "Anybody";
-    font-weight: 800;
-    text-align: center;
-    font-size: 80px;
-    color: #cc3333;
-    letter-spacing: 2px;
-    line-height: 50px;
+  font-family: 'Anybody';
+  font-weight: 800;
+  text-align: center;
+  font-size: 80px;
+  color: #cc3333;
+  letter-spacing: 2px;
+  line-height: 50px;
   }
+
   h2 {
-    font-family: "Fredoka", sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 45px;
-    color: #cc3333;
-    letter-spacing: 2px;
-    line-height: 70px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 45px;
+  color: #cc3333;
+  letter-spacing: 2px;
+  line-height: 70px
   }
+
   h3 {
-    font-family: "Fredoka", sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 20px;
-    color: #cc3333;
-    letter-spacing: 1px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  color: #cc3333;
+  letter-spacing: 1px;
   }
   h4 {
-    font-family: "Radio Canada", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
+  font-family:'Radio Canada', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
   }
   h5 {
-    font-family: "Radio Canada", sans-serif;
+    font-family:'Radio Canada', sans-serif;
     font-weight: 300;
     font-size: 14px;
   }
   p {
-    font-family: "Radio Canada", sans-serif;
-    font-size: 14px;
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 14px;
   }
+
   /***************header y nav *************/
   .loguito {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
-  header {
-    background-color: #510202;
-    background-image: none;
+
+  header{
+      background-color: #510202;
+      background-image: none;
   }
-  .botonesnav li {
-    display: none;
+  .botonesnav li{
+      display: none;
   }
+
   /****************index****************/
   .bannersindex {
-    display: none;
+      display: none;
   }
-  .bannersmobile {
-    display: block;
+
+  .bannersmobile{
+      display: block;
   }
-  .caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10 {
-    font-size: 18px;
-    text-align: center;
+  
+  .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10{
+      font-size: 18px;
+      text-align: center;
   }
-  .cajasindex {
-    margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+  .cajasindex{
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(5,1fr);
   }
+
   /*****************catalogo****************/
-  .caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10, .caja11, .caja12, .caja13, .caja14, .caja15, .caja16, .caja17 {
-    font-size: 18px;
-    text-align: center;
+  .caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7,.caja8,.caja9,.caja10,.caja11,.caja12,.caja13,.caja14,.caja15,.caja16,.caja17{
+      font-size: 18px;
+      text-align: center;
   }
-  .cajascat {
-    margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+  
+  .cajascat{
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(9,1fr);
   }
-  .mapita {
-    display: block;
-    width: 480px;
-    height: 180px;
+
+  .mapita  {
+      display: block;
+      width: 480px;
+      height: 180px;
   }
+
   /**************contacto*****************/
+
   /**************formulario**************/
-  .mailmodif, .nombremodif, .telmodif, .comentariomodif {
-    width: 80%;
-    margin-left: 10%;
+
+  .mailmodif,.nombremodif,.telmodif,.comentariomodif{
+      width: 80%;
+      margin-left: 10%;
   }
-  .comentariomodif {
-    height: 20%;
+  .comentariomodif{
+      height: 20%;
   }
-  .conteinerformulario {
-    background-color: #ffcc99;
-    display: flex;
-    flex-direction: column;
+  .conteinerformulario{
+      background-color: #ffcc99;
+      display: flex;
+      flex-direction: column;
   }
   .conteinerformpadre {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 0%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10%;
+      margin-left: 0%;
   }
-  .btnenviarmodif {
-    color: #510202;
-    background-color: white;
-    border: #ff9933;
-    font-family: "Radio Canada", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
+  .btnenviarmodif{
+      color: #510202;
+      background-color: white;
+      border: #ff9933;
+      font-family:'Radio Canada', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
   }
-  .btnenviarmodif:hover {
-    color: white;
-    background-color: #cc3333;
+  
+  .btnenviarmodif:hover{
+      color: white;
+      background-color: #cc3333;
   }
+  
   .conteinerformpadre h5 {
-    margin-left: 10%;
-    line-height: 25px;
+      margin-left: 10%;
+      line-height: 25px;
   }
+  
   /**************nuestrosdatos*************/
-  .phoneicon, .emailicon, .locationicon {
-    color: #ffcc99;
-    font-size: 20px;
+  
+  .phoneicon, .emailicon, .locationicon{
+      color: #ffcc99;
+      font-size: 20px;
   }
+  
+  .conteinerndpadre{
+      width: 100%;
+      border: #ffcc99 solid 1px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .mapacontacto{
+      height: 35%;
+      width: 80%;
+  }
+  
   .conteinerndpadre {
-    width: 100%;
-    border: #ffcc99 solid 1px;
-    display: flex;
-    justify-content: center;
+      text-align: center;
   }
-  .mapacontacto {
-    height: 35%;
-    width: 80%;
+
+  .bothinfo{
+      display: flex;
+      flex-direction: column;
   }
-  .conteinerndpadre {
-    text-align: center;
-  }
-  .bothinfo {
-    display: flex;
-    flex-direction: column;
-  }
+  
+
   /**************footer******************/
+
   .footerbuttons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
+      list-style: none;
+      display: flex;
+      justify-content:center;
+      text-decoration: none;
   }
+  
   footer {
-    display: block;
-    background-color: #510202;
+      display: block;
+      background-color: #510202;
   }
 }
-header .loguito, .mapitasec {
-  display: flex;
-  justify-content: center;
-}
-
-.botonesnav {
-  display: flex;
-  justify-content: space-around;
-}
-
-/*# sourceMappingURL=style.css.map */
