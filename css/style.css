@@ -23,7 +23,7 @@ h2 {
   font-size: 60px;
   color: #cc3333;
   letter-spacing: 2px;
-  line-height: 125px
+  line-height: 100px
 }
 
 h3 {
@@ -255,8 +255,59 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  margin-left: 2%;
+}
+/**********btndrop*******************/
+
+.dropbtn {
+  background-color: #cc3333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #510202;
+}
+.btndropdown{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.searchbarr{
+  width: 10%;
+  margin: auto;
+}
 
 
 /****************contacto pag****************/
@@ -329,40 +380,35 @@ nav a:hover {
   justify-content: space-evenly;
   margin: 5% 10% 5% 10%;
 }
+
+/*****************envios**********************/
+
+.enviosinfo{
+  text-align: center;
+  line-height: 2%;
+  margin-bottom: 2%;
+}
+.mapitasec{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+
 /******************acerca de******************/
 
 .acercadedesc{
-  inline-size: 50%;
-  margin-top: 5%;
-  line-height: 120%;
-  overflow:wrap;
-  margin-left: 10%;
-}
-.imgbig{
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  margin-right: 10%;
-  margin-top: -12%;
-}
-.cardleft{
-  border: solid #ff9933 1px;
+  overflow: wrap;
+  width: 50%;
+  margin: auto;
   text-align: center;
-  line-height: 200%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-.cardone,.cardtwo,.cardthree{
-  border: solid #ff9933 1px;
-}
-.abtpics{
+.giflamp{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-.cardone:hover,.cardtwo:hover,.cardthree:hover{
-  opacity: 0.3;
-  transition: .5s ease;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
 /*********************footer******************/
