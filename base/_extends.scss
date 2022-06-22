@@ -3,6 +3,9 @@
     justify-content: center;
 }
 
+%displayf{
+    display:flex;
+}
 %displayfspacea{
     display: flex;
     justify-content: space-around;
@@ -13,12 +16,12 @@
     padding: 0;
 }
 
-%displayf{
+%displayfrow{
     display: flex;
     flex-direction: row;
 }
 
-%displayf2{
+%displayfcolumn{
     display: flex;
     flex-direction: column;
 }

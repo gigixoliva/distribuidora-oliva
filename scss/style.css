@@ -226,7 +226,11 @@ nav a:hover {
   font-weight: bolder;
   background-color: #ff9933;
   padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   display: flex;
@@ -456,16 +460,19 @@ footer {
     box-shadow: 5px 8px 16px #888888;
     border: solid #ff9966 1px;
   }
+
   .cajascat img {
     height: 120px;
     width: 120px;
   }
+
   .cajascat {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     margin-left: 2%;
   }
+
   /**********btndrop*******************/
   .dropbtn {
     background-color: #cc3333;
@@ -473,6 +480,7 @@ footer {
     font-size: 14px;
     border: none;
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -481,42 +489,52 @@ footer {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
+
   .dropdown-content a {
     color: black;
     text-decoration: none;
   }
+
   .dropdown-content a:hover {
     background-color: #ddd;
   }
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
   .dropdown:hover .dropbtn {
     background-color: #510202;
   }
+
   .btndropdown {
     display: flex;
     justify-content: center;
     margin: 2%;
   }
+
   .searchbarr {
     width: 30%;
     margin: auto;
   }
+
   /**************contacto************/
   /**************formulario**************/
   .mailmodif, .nombremodif, .telmodif, .comentariomodif {
     width: 80%;
     margin-left: 10%;
   }
+
   .comentariomodif {
     height: 20%;
   }
+
   .conteinerformulario {
     background-color: #ffcc99;
     display: flex;
     flex-direction: column;
   }
+
   .conteinerformpadre {
     display: flex;
     flex-direction: row;
@@ -525,6 +543,7 @@ footer {
     margin-top: 10%;
     margin-left: 0%;
   }
+
   .btnenviarmodif {
     color: #510202;
     background-color: white;
@@ -533,25 +552,30 @@ footer {
     font-weight: 300;
     font-size: 15px;
   }
+
   .btnenviarmodif:hover {
     color: white;
     background-color: #cc3333;
   }
+
   /**************nuestrosdatos*************/
   .phoneicon, .emailicon, .locationicon {
     color: #ffcc99;
     font-size: 20px;
   }
+
   .conteinerndpadre {
     border: #ffcc99 solid 1px;
     text-align: center;
     height: 34.375rem;
     width: 25rem;
   }
+
   .mapacontacto {
     height: 15.625rem;
     width: 21.875rem;
   }
+
   .bothinfo {
     display: flex;
     flex-direction: column;
@@ -569,6 +593,7 @@ footer {
     letter-spacing: 2px;
     line-height: 50px;
   }
+
   h2 {
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
@@ -578,6 +603,7 @@ footer {
     letter-spacing: 2px;
     line-height: 70px;
   }
+
   h3 {
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
@@ -586,39 +612,48 @@ footer {
     color: #cc3333;
     letter-spacing: 1px;
   }
+
   h4 {
     font-family: "Radio Canada", sans-serif;
     font-weight: 300;
     font-size: 12px;
   }
+
   h5 {
     font-family: "Radio Canada", sans-serif;
     font-weight: 300;
     font-size: 14px;
   }
+
   p {
     font-family: "Radio Canada", sans-serif;
     font-size: 14px;
   }
+
   /***************header y nav *************/
   .loguito {
     display: flex;
     justify-content: center;
   }
+
   header {
     background-color: #510202;
     background-image: none;
   }
+
   .botonesnav li {
     display: none;
   }
+
   /****************index****************/
   .bannersindex {
     display: none;
   }
+
   .bannersmobile {
     display: block;
   }
+
   .cajain1, .cajain2, .cajain3, .cajain4, .cajain5, .cajain6, .cajain7, .cajain8, .cajain9, .cajain10 {
     width: 210px;
     height: 230px;
@@ -626,34 +661,44 @@ footer {
     box-shadow: 5px 8px 12px #888888;
     border: solid #888888 1px;
   }
+
   .cajasindex {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
   }
+
   .botonvercatalog, .botonmasinfo, .botonvolverarriba {
     text-decoration: none;
     color: white;
     font-size: 12px;
     font-family: "Karla", sans-serif;
     background-color: #cc3333;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     text-align: center;
     margin: auto;
   }
+
   .botonmasinfo, .btonovercatalog {
     margin-top: 2%;
     margin-bottom: 2%;
   }
+
   .botonvolverarriba {
     margin-bottom: 2%;
   }
+
   .mapita {
     display: block;
     width: 480px;
     height: 180px;
   }
+
   /*****************catalogo****************/
   .caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9, .caja10, .caja11, .caja12, .caja13, .caja14, .caja15, .caja16, .caja17, .caja18, .caja19, .caja20, .caja21, .caja22, .caja23, .caja24, .caja25, .caja26, .caja27, .caja28, .caja29, .caja30 {
     width: 205px;
@@ -661,11 +706,13 @@ footer {
     box-shadow: 5px 8px 12px #888888;
     border: solid #888888 1px;
   }
+
   .cajascat {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
   }
+
   /***************btn drop*******************/
   .dropbtn {
     background-color: #cc3333;
@@ -674,9 +721,11 @@ footer {
     font-size: 14px;
     border: none;
   }
+
   .dropdown {
     display: inline-block;
   }
+
   .dropdown-content {
     display: none;
     background-color: #f1f1f1;
@@ -684,40 +733,49 @@ footer {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
+
   .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
   }
+
   .dropdown-content a:hover {
     background-color: #ddd;
   }
+
   .dropdown:hover .dropbtn {
     background-color: #510202;
   }
+
   .btndropdown {
     display: flex;
     justify-content: center;
     margin: 5%;
   }
+
   .searchbarr {
     width: 40%;
     margin: auto;
   }
+
   /**************contacto*****************/
   /**************formulario**************/
   .mailmodif, .nombremodif, .telmodif, .comentariomodif {
     width: 80%;
     margin-left: 10%;
   }
+
   .comentariomodif {
     height: 20%;
   }
+
   .conteinerformulario {
     background-color: #ffcc99;
     display: flex;
     flex-direction: column;
   }
+
   .conteinerformpadre {
     display: flex;
     flex-direction: row;
@@ -726,6 +784,7 @@ footer {
     margin-top: 10%;
     margin-left: 0%;
   }
+
   .btnenviarmodif {
     color: #510202;
     background-color: white;
@@ -734,62 +793,72 @@ footer {
     font-weight: 300;
     font-size: 15px;
   }
+
   .btnenviarmodif:hover {
     color: white;
     background-color: #cc3333;
   }
+
   .conteinerformpadre h5 {
     margin-left: 10%;
     line-height: 25px;
   }
+
   /**************nuestrosdatos*************/
   .phoneicon, .emailicon, .locationicon {
     color: #ffcc99;
     font-size: 20px;
   }
+
   .conteinerndpadre {
     border: #ffcc99 solid 1px;
     text-align: center;
     height: 34.375rem;
     width: 25rem;
   }
+
   .mapacontacto {
     height: 15.625rem;
     width: 21.875rem;
   }
+
   .bothinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   /***************envios**********************/
   .mapitaenvios {
     height: 200px;
     width: 250px;
   }
+
   /**************footer******************/
   .footerbuttons {
     display: none;
   }
+
   .footermobile {
     display: block;
     text-align: center;
     font-family: "Karla", sans-serif;
     font-size: 16px;
   }
+
   .footermobile ul {
     list-style: none;
     margin-left: -7%;
   }
+
   .footermobile a {
     color: #CFD8DC;
     list-style: none;
     text-decoration: none;
   }
+
   footer {
     display: block;
     background-color: #510202;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
